@@ -52,9 +52,13 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | 
 
 ## Bit Manipulation
+  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf])
 
-* [Queue](https://github.com/kiwonyun/LeetCode#queue)
+## Queue
+  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution
 
 <!--
