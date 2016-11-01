@@ -1,13 +1,11 @@
 # LeetCode
 This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions. I have started to solve the problems of LeetCode since 2015 Summer. After one year experience, I created this repository to organize and summarize my solutions for the better learning. I will keep update for more and better solutions.
 
-## Problems
+## All Problems
 
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | 
-
-<!--
 
 ## Algorithms
 
@@ -34,7 +32,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Greedy](https://github.com/kiwonyun/LeetCode#greedy)
 * [Design](https://github.com/kiwonyun/LeetCode#design)
 
+## Math
+  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
+400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | 
 
+<!--
 ## Bit Manipulation
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
