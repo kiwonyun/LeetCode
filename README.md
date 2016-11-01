@@ -4,9 +4,8 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 ## Problems
 
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-| ------------- |--------------| -----
-400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | |
+-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
+400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | 
 
 <!--
 
