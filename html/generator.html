@@ -1,0 +1,68 @@
+/* generator.html
+ * This is to create *.cpp file and generate markdown language for each solution
+ * 2016-11-03
+ *
+ * By Kiwon Yun (kiwon.kyun@gmail.com)
+ * License: MIT
+ */
+<html>
+<head>
+<title>LeetCode Solution Generator</title>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+<script src="FileSaver.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+function clickGenerate()
+{
+	// create code file and save it as a file into a default download folder
+	var str = $("#p_code").val();
+	var blob = new Blob([str], {type: "text/plain;charset=utf-8"});
+	var filename = ($("#filename").val()).concat('.cpp');
+	saveAs(blob, filename.toString());
+	
+	// convert the problem information to markdown as the table format
+	var url = $("#url").val();
+	var str = $("#title").val();
+	var str_list = $("#title").val().split(". ");
+	var number = str_list[0];
+	var title = str_list[1];
+	var s = document.getElementById("level");
+	var level = s.options[s.selectedIndex].value;
+	var code = '| ' + number + ' | [' + title + '](' + url + ') | [C++](./C++/' + $("#filename").val() + '.cpp)' + '| _O(n)_ | _O(1)_ | ' + level + ' | | |';
+	
+	document.getElementById("markdown_code").value = code.toString();
+}
+</script>
+
+<!--<h1>LeetCode Solution Generator</h1>-->
+<div style="display:table-cell;vertical-align:middle;">
+	URL: <textarea id="url" name="leetcode_url" rows="1" cols="80"></textarea><br>
+	Title: <textarea id="title" name="title" rows="1" cols="50"></textarea><br>
+	Difficulty: 
+	<select id="level" name="level">
+	  <option value="Easy" selected="selected">Easy</option>
+	  <option value="Medium">Medium</option>
+	  <option value="Hard">Hard</option>
+	</select>
+<br>
+<br>
+Code: <br>
+<textarea id="p_code" name="problem_code" rows="20" cols="60"></textarea><br><br>
+Filename: <textarea id="filename" name="filename" rows="1" cols="40"></textarea><br>
+</div>
+<br><br>
+<div>
+<button id="gen_button" onclick="clickGenerate()" type="generate">Generate</button>
+</div>
+
+<br><br>
+
+<div>
+<textarea id="markdown_code" name="markdown_code" rows="20" cols="60"></textarea><br><br>
+</div>
+</body>
+</html>

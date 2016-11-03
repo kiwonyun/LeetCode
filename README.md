@@ -3,21 +3,25 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 
 ## All Problems
 
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Idea Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
-400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | Math | 
-402 | [Remove K digits](https://leetcode.com/problems/remove-k-digits/) | [C++](./C++/removeKdigits.cpp) | _O(n)_       | _O(1)_          | Medium         |  | check non-increasing number
-404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sumOfLeftLeaves.cpp) | _O(n)_       | _O(1)_          | Easy         | Tree | 
-405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf])
-406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Idea Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- | 
+| 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | Math |  |
+| 402 | [Remove K digits](https://leetcode.com/problems/remove-k-digits/) | [C++](./C++/removeKdigits.cpp) | _O(n)_       | _O(1)_          | Medium         |  | check non-increasing number |
+| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sumOfLeftLeaves.cpp) | _O(n)_       | _O(1)_          | Easy         | Tree |  |
+| 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf]) |
+| 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
 
-
+***
 
 ## Algorithms
 
 * [Tree](https://github.com/kiwonyun/LeetCode#tree)
 * [Math](https://github.com/kiwonyun/LeetCode#math)
 * [Bit Manipulation](https://github.com/kiwonyun/LeetCode#bit-manipulation)
+* [Queue](https://github.com/kiwonyun/LeetCode#queue)
+* [Hash Table](https://github.com/kiwonyun/LeetCode#hash-table)
+
 
 <!--
 * [Array](https://github.com/kiwonyun/LeetCode#array)
@@ -26,7 +30,6 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Stack](https://github.com/kiwonyun/LeetCode#stack)
 * [Queue](https://github.com/kiwonyun/LeetCode#queue)
 * [Heap](https://github.com/kiwonyun/LeetCode#heap)
-* [Hash Table](https://github.com/kiwonyun/LeetCode#hash-table)
 * [Data Structure](https://github.com/kiwonyun/LeetCode#data-structure)
 * [Two Pointers](https://github.com/kiwonyun/LeetCode#two-pointers)
 * [Sort](https://github.com/kiwonyun/LeetCode#sort)
@@ -42,29 +45,26 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 -->
 
 ## Tree
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
-404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sumOfLeftLeaves.cpp) | _O(n)_       | _O(1)_          | Easy         | Tree | 
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
+| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sumOfLeftLeaves.cpp) | _O(n)_       | _O(1)_          | Easy         | Tree | 
 
 ## Math
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
-400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | 
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | |
 
 ## Bit Manipulation
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
-405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf])
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf]) |
 
 ## Queue
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
-406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution |
 
-<!--
-## Bit Manipulation
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/single-number.cpp) [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
-137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [C++](./C++/single-number-ii.cpp) [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
--->
+## Hash Table
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
