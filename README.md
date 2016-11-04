@@ -13,6 +13,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(1)](./C++/convert_1.cpp)| _O(n)_ | _O(m)_ | Easy| String | Using string buffer per each row |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/addTwoNumbers.cpp)| _O(n+m)_ | _O(1)_ | Medium| Linked List | |
 
 ***
 
@@ -24,11 +25,10 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Queue](https://github.com/kiwonyun/LeetCode#queue)
 * [Hash Table](https://github.com/kiwonyun/LeetCode#hash-table)
 * [String](https://github.com/kiwonyun/LeetCode#string)
-
+* [Linked List](https://github.com/kiwonyun/LeetCode#linked-list)
 
 <!--
 * [Array](https://github.com/kiwonyun/LeetCode#array)
-* [Linked List](https://github.com/kiwonyun/LeetCode#linked-list)
 * [Stack](https://github.com/kiwonyun/LeetCode#stack)
 * [Queue](https://github.com/kiwonyun/LeetCode#queue)
 * [Heap](https://github.com/kiwonyun/LeetCode#heap)
@@ -77,10 +77,18 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(1)](./C++/convert_1.cpp)| _O(n)_ | _O(m)_ | Easy| String | Using string buffer per each row |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
 
+### Linked List
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/addTwoNumbers.cpp)| _O(n+m)_ | _O(1)_ | Medium| Linked List | |
+
+
 ***
 
 ## Notes and Tips
 
 ### Math
 * -a mod b = b - (a mod b)
-* 
+
+## C++
+* simple vector initialization: vector<int> array(4); => {0,0,0,0}
