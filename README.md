@@ -11,6 +11,8 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf]) |
 | 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(1)](./C++/convert_1.cpp)| _O(n)_ | _O(m)_ | Easy| String | Using string buffer per each row |
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
 
 ***
 
@@ -21,11 +23,11 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Bit Manipulation](https://github.com/kiwonyun/LeetCode#bit-manipulation)
 * [Queue](https://github.com/kiwonyun/LeetCode#queue)
 * [Hash Table](https://github.com/kiwonyun/LeetCode#hash-table)
+* [String](https://github.com/kiwonyun/LeetCode#string)
 
 
 <!--
 * [Array](https://github.com/kiwonyun/LeetCode#array)
-* [String](https://github.com/kiwonyun/LeetCode#string)
 * [Linked List](https://github.com/kiwonyun/LeetCode#linked-list)
 * [Stack](https://github.com/kiwonyun/LeetCode#stack)
 * [Queue](https://github.com/kiwonyun/LeetCode#queue)
@@ -44,27 +46,41 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Design](https://github.com/kiwonyun/LeetCode#design)
 -->
 
-## Tree
+### Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sumOfLeftLeaves.cpp) | _O(n)_       | _O(1)_          | Easy         | Tree | 
 
-## Math
+### Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | |
 
-## Bit Manipulation
+### Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf]) |
 
-## Queue
+### Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 406 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./C++/reconstructQueue.cpp) | _O(n)_       | _O(1)_          | Medium         | Queue | Good sorting makes a simple solution |
 
-## Hash Table
+### Hash Table
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
+
+### String
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(1)](./C++/convert_1.cpp)| _O(n)_ | _O(m)_ | Easy| String | Using string buffer per each row |
+| 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
+
+***
+
+## Notes and Tips
+
+### Math
+* -a mod b = b - (a mod b)
+* 
