@@ -14,6 +14,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(1)](./C++/convert_1.cpp)| _O(n)_ | _O(m)_ | Easy| String | Using string buffer per each row |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/addTwoNumbers.cpp)| _O(n+m)_ | _O(1)_ | Medium| Linked List | |
+| 409 | [Longest Palindrome](https://leetcode.com/contest/7/problems/longest-palindrome/) | [C++](./C++/longestPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | |
 
 ***
 
@@ -70,6 +71,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
+| 409 | [Longest Palindrome](https://leetcode.com/contest/7/problems/longest-palindrome/) | [C++](./C++/longestPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | |
 
 ### String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -87,8 +89,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 
 ## Notes and Tips
 
+### Tip
+* palindrome -> hash
+
 ### Math
 * -a mod b = b - (a mod b)
 
 ## C++
-* simple vector initialization: vector<int> array(4); => {0,0,0,0}
+* simple vector initialization: vector<int> array(4);    => {0,0,0,0}
+* simple array initialization: int array[4] = {0};   => {0,0,0,0}
