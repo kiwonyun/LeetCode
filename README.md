@@ -15,6 +15,10 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/addTwoNumbers.cpp)| _O(n+m)_ | _O(1)_ | Medium| Linked List | |
 | 409 | [Longest Palindrome](https://leetcode.com/contest/7/problems/longest-palindrome/) | [C++](./C++/longestPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C++](./C++/isPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse string |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome3.cpp)| _O(n)_ | _O(1)_ | Easy | String  | reverse string |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
+
 
 ***
 
@@ -78,6 +82,9 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(1)](./C++/convert_1.cpp)| _O(n)_ | _O(m)_ | Easy| String | Using string buffer per each row |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [C++(2)](./C++/convert_2.cpp)| _O(n)_ | _O(1)_ | Easy| String, Math | Using modulo operator - array indexing |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C++](./C++/isPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse string |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome3.cpp)| _O(n)_ | _O(1)_ | Easy | String  | reverse string |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -90,11 +97,43 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 ## Notes and Tips
 
 ### Tip
-* palindrome -> hash
+* palindrome:
+	* 1) reverse string
+	* 2) hash
+	* 3) indexing (move left2right == move right2left)
 
 ### Math
 * -a mod b = b - (a mod b)
 
-## C++
-* simple vector initialization: vector<int> array(4);    => {0,0,0,0}
-* simple array initialization: int array[4] = {0};   => {0,0,0,0}
+### C++
+#### vector, array
+* simple vector initialization: 
+	```java
+	vector<int> array(4);    
+    > {0,0,0,0}
+    ```
+* simple array initialization
+	```java
+    int array[4] = {0};
+    > {0,0,0,0}
+    ```
+    
+#### string
+* convert string to lower case letters
+	```java
+    string str = "Apple";
+    transform( str.begin(), str.end(), str.begin(), ::tolower );
+    ```
+    
+* remove spaces from string
+	```java
+    str.erase( remove( s.begin(), s.end(), ' '), str.end() );
+    ```
+
+* remove special charaters and consider only alphanumeric charaters
+	```java
+   for(int i = 0; i < s.length(); i++){
+        if( isalnum(s[i]) )
+            str += s[i];
+    }
+	```
