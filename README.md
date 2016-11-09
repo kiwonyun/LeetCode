@@ -138,7 +138,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
             str += s[i];
     }
 	```
-    
+
 #### Hash
 * initialization
 	``` java
