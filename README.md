@@ -18,7 +18,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C++](./C++/isPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse string |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome3.cpp)| _O(n)_ | _O(1)_ | Easy | String  | reverse string |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
-
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 
 ***
 
@@ -85,6 +85,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C++](./C++/isPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse string |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome3.cpp)| _O(n)_ | _O(1)_ | Easy | String  | reverse string |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -110,12 +111,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * simple vector initialization: 
 	```java
 	vector<int> array(4);    
-    > {0,0,0,0}
+    >> {0,0,0,0}
     ```
 * simple array initialization
 	```java
     int array[4] = {0};
-    > {0,0,0,0}
+    >> {0,0,0,0}
     ```
     
 #### string
@@ -136,4 +137,10 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
         if( isalnum(s[i]) )
             str += s[i];
     }
+	```
+    
+#### Hash
+* initialization
+	``` java
+    unordered_map<char, int> T = { { 'I' , 1 }, { 'V' , 5 } };
 	```
