@@ -19,6 +19,8 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome3.cpp)| _O(n)_ | _O(1)_ | Easy | String  | reverse string |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
+| 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
+| 416 | [Partition Equal Subset Sum](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/partition-equal-subset-sum/) | [C++](./C++/canPartition.cpp)| _O(nm)_ | _O(m)_ | Medium | DP | variant of <b>subset-sum</b> problem, note that the sum of each subset is equal to the half of the sum|
 
 ***
 
@@ -31,6 +33,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Hash Table](https://github.com/kiwonyun/LeetCode#hash-table)
 * [String](https://github.com/kiwonyun/LeetCode#string)
 * [Linked List](https://github.com/kiwonyun/LeetCode#linked-list)
+* [Dynamic Programming](https://github.com/kiwonyun/LeetCode#dynamic-programming)
 
 <!--
 * [Array](https://github.com/kiwonyun/LeetCode#array)
@@ -46,7 +49,6 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [Breadth-First Search](https://github.com/kiwonyun/LeetCode#breadth-first-search)
 * [Depth-First Search](https://github.com/kiwonyun/LeetCode#depth-first-search)
 * [Backtracking](https://github.com/kiwonyun/LeetCode#backtracking)
-* [Dynamic Programming](https://github.com/kiwonyun/LeetCode#dynamic-programming)
 * [Greedy](https://github.com/kiwonyun/LeetCode#greedy)
 * [Design](https://github.com/kiwonyun/LeetCode#design)
 -->
@@ -86,12 +88,17 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome3.cpp)| _O(n)_ | _O(1)_ | Easy | String  | reverse string |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
+| 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/addTwoNumbers.cpp)| _O(n+m)_ | _O(1)_ | Medium| Linked List | |
 
+### Dynamic Programming
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 416 | [Partition Equal Subset Sum](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/partition-equal-subset-sum/) | [C++](./C++/canPartition.cpp)| _O(nm)_ | _O(m)_ | Medium | DP | variant of <b>subset-sum</b> problem, note that the sum of each subset is equal to the half of the sum|
 
 ***
 
@@ -107,11 +114,29 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * -a mod b = b - (a mod b)
 
 ### C++
+#### C++11
+* for loop
+	``` java
+    for(int i : nums)
+            sum += i;
+    ```
+
+
 #### vector, array
 * simple vector initialization: 
 	```java
 	vector<int> array(4);    
     >> {0,0,0,0}
+
+	vector<vector<int>> array(3, vector<int>(4))
+    >> {0,0,0,0,
+    >>  0,0,0,0,
+    >>  0,0,0,0}
+    
+    vector<bool> array(4, true); 	// default of boolean vector is false
+    
+    vector<pair<bool, int>> array(3, make_pair(false, 0));
+    
     ```
 * simple array initialization
 	```java
