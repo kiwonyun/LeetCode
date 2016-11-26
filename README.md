@@ -21,6 +21,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/partition-equal-subset-sum/) | [C++](./C++/canPartition.cpp)| _O(nm)_ | _O(m)_ | Medium | DP | variant of <b>subset-sum</b> problem, note that the sum of each subset is equal to the half of the sum|
+| 437 | [Path Sum III](https://leetcode.com/contest/smarking-algorithm-contest/problems/path-sum-iii/) | [C++](./C++/pathSum_3.cpp)| _O(n)_ | _O(1)_ | Easy | Tree | accumated sum |
 
 ***
 
@@ -57,6 +58,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- 
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./C++/sumOfLeftLeaves.cpp) | _O(n)_       | _O(1)_          | Easy         | Tree | 
+| 437 | [Path Sum III](https://leetcode.com/contest/smarking-algorithm-contest/problems/path-sum-iii/) | [C++](./C++/pathSum_3.cpp)| _O(n)_ | _O(1)_ | Easy | Tree | accumated sum |
 
 ### Math
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -142,6 +144,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 	```java
     int array[4] = {0};
     >> {0,0,0,0}
+
+* remove dumplicated element
+
+	``` java
+	sort( vec.begin(), vec.end() );
+	vec.erase( unique( vec.begin(), vec.end() ), vec.end() );```
     ```
     
 #### string
