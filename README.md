@@ -122,7 +122,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 ### C++
 #### C++11
 * for loop
-	``` java
+	```cpp
     for(int i : nums)
             sum += i;
     ```
@@ -130,7 +130,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 
 #### vector, array
 * simple vector initialization: 
-	```java
+	```cpp
 	vector<int> array(4);    
     >> {0,0,0,0}
 
@@ -145,25 +145,25 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
     
     ```
 * simple array initialization
-	```java
+	```cpp
     int array[4] = {0};
     >> {0,0,0,0}
     ```
     
 #### string
 * convert string to lower case letters
-	```java
+	```cpp
     string str = "Apple";
     transform( str.begin(), str.end(), str.begin(), ::tolower );
     ```
     
 * remove spaces from string
-	```java
+	```cpp
     str.erase( remove( s.begin(), s.end(), ' '), str.end() );
     ```
 
 * remove special charaters and consider only alphanumeric charaters
-	```java
+	```cpp
    for(int i = 0; i < s.length(); i++){
         if( isalnum(s[i]) )
             str += s[i];
@@ -171,13 +171,13 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 	```
 
 * substring
-	``` java
+	``` cpp
     str.substr(pos, len) // from pos with len length
     str.substr(pos) // from pos to the end
     ```
 
 #### Hash
 * initialization
-	``` java
+	``` cpp
     unordered_map<char, int> T = { { 'I' , 1 }, { 'V' , 5 } };
 	```
