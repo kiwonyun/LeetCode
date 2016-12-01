@@ -21,6 +21,9 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/partition-equal-subset-sum/) | [C++](./C++/canPartition.cpp)| _O(nm)_ | _O(m)_ | Medium | DP | variant of <b>subset-sum</b> problem, note that the sum of each subset is equal to the half of the sum|
+| 439 | [Ternary Expression Parser](https://leetcode.com/contest/smarking-algorithm-contest/problems/ternary-expression-parser/) | [C++](./C++/parseTernary.cpp)| _O(n^2)_ | _O(1)_ | Medium | String | |
+| 438 | [Find All Anagrams in a String](https://leetcode.com/contest/smarking-algorithm-contest/problems/find-all-anagrams-in-a-string/) | [C++](./C++/findAnagrams.cpp)| _O(n)_ | _O(1)_ | Medium | Hash | Tricky: using counting # of matched characters |
+| 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/singleNumber.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | |
 
 ***
 
@@ -67,6 +70,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf]) |
+| 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/singleNumber.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | |
 
 ### Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -78,6 +82,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
 | 409 | [Longest Palindrome](https://leetcode.com/contest/7/problems/longest-palindrome/) | [C++](./C++/longestPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | |
+| 438 | [Find All Anagrams in a String](https://leetcode.com/contest/smarking-algorithm-contest/problems/find-all-anagrams-in-a-string/) | [C++](./C++/findAnagrams.cpp)| _O(n)_ | _O(1)_ | Medium | Hash | Tricky: using counting # of matched characters |
 
 ### String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -89,6 +94,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/isPalindrome2.cpp)| _O(n)_ | _O(1)_ | Easy | String | reverse digits, <b>tricky</b> (e.g. /10, %10) - faster than using string |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
+| 439 | [Ternary Expression Parser](https://leetcode.com/contest/smarking-algorithm-contest/problems/ternary-expression-parser/) | [C++](./C++/parseTernary.cpp)| _O(n^2)_ | _O(1)_ | Medium | String | |
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
