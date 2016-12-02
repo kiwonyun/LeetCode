@@ -24,6 +24,8 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 439 | [Ternary Expression Parser](https://leetcode.com/contest/smarking-algorithm-contest/problems/ternary-expression-parser/) | [C++](./C++/parseTernary.cpp)| _O(n^2)_ | _O(1)_ | Medium | String | |
 | 438 | [Find All Anagrams in a String](https://leetcode.com/contest/smarking-algorithm-contest/problems/find-all-anagrams-in-a-string/) | [C++](./C++/findAnagrams.cpp)| _O(n)_ | _O(1)_ | Medium | Hash | Tricky: using counting # of matched characters |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/singleNumber.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | |
+| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [C++](./C++/getSum.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | <b>very simple 7 line code!</b> (Also, consider getSubtract(), getProduct(), negate(), etc.|
+| 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/canWinNim.cpp)| _O(n)_ | _O(1)_ | Easy | Math | |
 
 ***
 
@@ -65,12 +67,14 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./C++/findNthDigit.cpp) | _O(n)_       | _O(1)_          | Easy         | simple math | |
+| 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/canWinNim.cpp)| _O(n)_ | _O(1)_ | Easy | Math | |
 
 ### Bit Manipulation
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 405 | [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./C++/toHex.cpp) | _O(n)_       | _O(1)_          | Easy         | Bit Manipulation | Use & for array index (e.g. myArray[num & 0xf]) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/singleNumber.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | |
+| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [C++](./C++/getSum.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | <b>very simple 7 line code!</b> (Also, consider getSubtract(), getProduct(), negate(), etc.|
 
 ### Queue
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
