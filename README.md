@@ -189,6 +189,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
     str.substr(pos) // from pos to the end
     ```
 
+* convert char to string
+	``` cpp
+    char c = 'a';
+    string str = string(1, c);
+    ```
+
 #### Hash
 * initialization
 
