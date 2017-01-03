@@ -26,6 +26,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/singleNumber.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | |
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [C++](./C++/getSum.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | <b>very simple 7 line code!</b> (Also, consider getSubtract(), getProduct(), negate(), etc.|
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/canWinNim.cpp)| _O(n)_ | _O(1)_ | Easy | Math | |
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | O(n) | O(1) | String
 
 ***
 
@@ -99,6 +100,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 439 | [Ternary Expression Parser](https://leetcode.com/contest/smarking-algorithm-contest/problems/ternary-expression-parser/) | [C++](./C++/parseTernary.cpp)| _O(n^2)_ | _O(1)_ | Medium | String | |
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | O(n) | O(1) | String
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
