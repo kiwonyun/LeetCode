@@ -28,7 +28,8 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/canWinNim.cpp)| _O(n)_ | _O(1)_ | Easy | Math | |
 | 435 | [Non-overlapping Intervals](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/non-overlapping-intervals/) | [C++](./C++/eraseOverlapIntervals.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Sort | Tricky: sort by ending edge first|
 | 436 | [Find Right Interval](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/find-right-interval/) | [C++](./C++/findRightInterval.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Hash | idea: original hash map is always sorted. Also, use lower_bound() |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | Medium | DP | two pointers
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | O(n) | O(1) | String
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | DP | two pointers
 
 ***
 
@@ -103,6 +104,8 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 439 | [Ternary Expression Parser](https://leetcode.com/contest/smarking-algorithm-contest/problems/ternary-expression-parser/) | [C++](./C++/parseTernary.cpp)| _O(n^2)_ | _O(1)_ | Medium | String | |
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | O(n) | O(1) | String
+
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -113,7 +116,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/partition-equal-subset-sum/) | [C++](./C++/canPartition.cpp)| _O(nm)_ | _O(m)_ | Medium | DP | variant of <b>subset-sum</b> problem, note that the sum of each subset is equal to the half of the sum|
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | Medium | DP | two pointers
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | DP | two pointers
 
 ### Interval
 * Input looks like [[2,3],[4,5]]. They are mostly sortring problem, but tricky!
@@ -207,6 +210,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
     str.substr(pos) // from pos to the end
     ```
 
+* convert char to string
+	``` cpp
+    char c = 'a';
+    string str = string(1, c);
+    ```
+    
 #### hash
 * initialization
 
