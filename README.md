@@ -26,7 +26,9 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/singleNumber.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | |
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [C++](./C++/getSum.cpp)| _O(n)_ | _O(1)_ | Easy | Bit manipulation | <b>very simple 7 line code!</b> (Also, consider getSubtract(), getProduct(), negate(), etc.|
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/canWinNim.cpp)| _O(n)_ | _O(1)_ | Easy | Math | |
-| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | O(n) | O(1) | String
+| 435 | [Non-overlapping Intervals](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/non-overlapping-intervals/) | [C++](./C++/eraseOverlapIntervals.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Sort | Tricky: sort by ending edge first|
+| 436 | [Find Right Interval](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/find-right-interval/) | [C++](./C++/findRightInterval.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Hash | idea: original hash map is always sorted. Also, use lower_bound() |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | Medium | DP | two pointers
 
 ***
 
@@ -40,6 +42,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 * [String](https://github.com/kiwonyun/LeetCode#string)
 * [Linked List](https://github.com/kiwonyun/LeetCode#linked-list)
 * [Dynamic Programming](https://github.com/kiwonyun/LeetCode#dynamic-programming)
+* [Interval](https://github.com/kiwonyun/LeetCode#interval)
 
 <!--
 * [Array](https://github.com/kiwonyun/LeetCode#array)
@@ -100,7 +103,6 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/romanToInt.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 415 | [Add Strings](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/add-strings/) | [C++](./C++/addStrings.cpp)| _O(n)_ | _O(1)_ | Easy | String | |
 | 439 | [Ternary Expression Parser](https://leetcode.com/contest/smarking-algorithm-contest/problems/ternary-expression-parser/) | [C++](./C++/parseTernary.cpp)| _O(n^2)_ | _O(1)_ | Medium | String | |
-| 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | O(n) | O(1) | String
 
 ### Linked List
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -111,6 +113,16 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
 | -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/contest/leetcode-weekly-contest-8/problems/partition-equal-subset-sum/) | [C++](./C++/canPartition.cpp)| _O(nm)_ | _O(m)_ | Medium | DP | variant of <b>subset-sum</b> problem, note that the sum of each subset is equal to the half of the sum|
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | Medium | DP | two pointers
+
+### Interval
+* Input looks like [[2,3],[4,5]]. They are mostly sortring problem, but tricky!
+
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
+| -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| ----- |
+| 435 | [Non-overlapping Intervals](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/non-overlapping-intervals/) | [C++](./C++/eraseOverlapIntervals.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Sort | Tricky: sort by ending edge first|
+| 436 | [Find Right Interval](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/find-right-interval/) | [C++](./C++/findRightInterval.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Hash | idea: original hash map is always sorted. Also, use lower_bound() |
+
 
 ***
 
@@ -159,6 +171,12 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
     >> {0,0,0,0}
     ```
     
+* sort by user-defined function (the simpliest version)
+
+	```cpp
+	sort(vec.begin(), vec.end(), [](const myStruct& a, const myStruct& b){ return a.val < b.val; });
+	```
+ 
 #### string
 * convert string to lower case letters
 
@@ -189,15 +207,44 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
     str.substr(pos) // from pos to the end
     ```
 
-* convert char to string
-	``` cpp
-    char c = 'a';
-    string str = string(1, c);
-    ```
-
-#### Hash
+#### hash
 * initialization
 
 	``` cpp
     unordered_map<char, int> T = { { 'I' , 1 }, { 'V' , 5 } };
 	```
+    
+#### sorting
+* lower_bound, upper_bound
+	```cpp
+    map<int,int> hash;
+    hash[1] = 3;
+    hash[5] = 2;
+    hash[10] = 0;
+    hash[20] = 1;
+
+    auto it = hash.lower_bound( 10 );
+    // it->second => 0;
+    ```
+    
+    ```cpp
+    int main () {
+      int myints[] = {10,20,30,30,20,10,10,20};
+      std::vector<int> v(myints,myints+8);           // 10 20 30 30 20 10 10 20
+
+      std::sort (v.begin(), v.end());                // 10 10 10 20 20 20 30 30
+
+      std::vector<int>::iterator low,up;
+      low=std::lower_bound (v.begin(), v.end(), 20); //          ^
+      up= std::upper_bound (v.begin(), v.end(), 20); //                   ^
+
+      std::cout << "lower_bound at position " << (low- v.begin()) << '\n';
+      std::cout << "upper_bound at position " << (up - v.begin()) << '\n';
+
+      return 0;
+    }
+    
+    // lower_bound at position 3
+	// upper_bound at position 6
+
+    ```
