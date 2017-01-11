@@ -30,6 +30,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 436 | [Find Right Interval](https://leetcode.com/contest/smarking-algorithm-contest-2/problems/find-right-interval/) | [C++](./C++/findRightInterval.cpp)| _O(n)_ | _O(1)_ | Medium | Interval, Hash | idea: original hash map is always sorted. Also, use lower_bound() |
 | 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/countAndSay.cpp.cpp)| _O(n)_ | _O(1)_ | Easy | String
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [C++](./C++/lengthOfLongestSubstring.cpp)| _O(n)_ | _O(1)_ | Medium | DP | two pointers
+| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C++](./C++/getHint.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | one pass (increase/decrease hash value) |
 
 ***
 
@@ -92,6 +93,7 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./C++/twoSum.cpp)| _O(n)_ | _O(1)_ | Easy | Hash | Hash is better than array indexing |
 | 409 | [Longest Palindrome](https://leetcode.com/contest/7/problems/longest-palindrome/) | [C++](./C++/longestPalindrome.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | |
 | 438 | [Find All Anagrams in a String](https://leetcode.com/contest/smarking-algorithm-contest/problems/find-all-anagrams-in-a-string/) | [C++](./C++/findAnagrams.cpp)| _O(n)_ | _O(1)_ | Medium | Hash | Tricky: using counting # of matched characters |
+| 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [C++](./C++/getHint.cpp)| _O(n)_ | _O(1)_ | Easy | Hash Table | one pass (increase/decrease hash value) |
 
 ### String
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note |
@@ -162,6 +164,9 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
     >>  0,0,0,0,
     >>  0,0,0,0}
     
+    vector<vector<int>> array(3);
+    >> {vector<int>, vector<int>, vector<int>}
+    
     vector<bool> array(4, true); 	// default of boolean vector is false
     
     vector<pair<bool, int>> array(3, make_pair(false, 0));
@@ -179,6 +184,13 @@ This project is for C++ Solutions of [LeetCode](https://leetcode.com/) Questions
 	```cpp
 	sort(vec.begin(), vec.end(), [](const myStruct& a, const myStruct& b){ return a.val < b.val; });
 	```
+
+* return the index of the maximum value
+	```cpp
+    max_element(v.begin(), v.end()) - v.begin();
+    or
+    distance(v, max_element(v.begin(), v.end())));
+    ```
  
 #### string
 * convert string to lower case letters
